@@ -1,5 +1,3 @@
-
-
 /**
  * clock.js
  * Continuously updates the HTML element with id="clock" with the current time.
