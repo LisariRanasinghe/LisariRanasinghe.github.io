@@ -49,7 +49,6 @@
     <footer>
         <p>&copy; 2025 Fun with Embedded Systems</p>
     </footer>
-    <script src="js/Clock.js"></script>
+    <script src="js/clock.js"></script>
 </body>
-    </html>
-
+</html>
