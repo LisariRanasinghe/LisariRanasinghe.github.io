@@ -100,24 +100,33 @@
       background-color:#740F06   ;
       display: flex;
       justify-content: space-around;
-      padding: 300px 60px; 
+      align-items: center;
+      padding: 100px 80px; 
       gap: 80px;
+      flex-wrap: wrap;
     }
 
     .featured-item {
       flex: 1;
       text-align: center;
+      text-align: center;
     }
 
-    .featured-item img {
-      width: 100%;
-      border-radius: 6px;
+        .featured-item img {
+          width: 100%;
+          height: 230px;      /* forces equal height */
+          object-fit: cover;  /* crops image nicely */
+          border-radius: 10px;
+          display: block;
     }
 
-    .featured-item h3 {
-      margin-top: 10px;
-      font-size: 1rem;
-    }
+.featured-item h3 {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  /* white text for contrast */
+}
 
     /* Button Section */
     .cta {
