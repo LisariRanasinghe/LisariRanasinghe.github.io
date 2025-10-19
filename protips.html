@@ -1,206 +1,283 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/protips.css">
-</head>
-<body>
-    <header>
-<a href="index.html" class="logo-link"><img src="../Images/Travelanka.png" alt="Travelanka Logo"></a>        
-        <nav class ="navbar">
-        <ul>
-            <li><a href ="index.html">HOME</a></li>
-            <li><a href ="aboutus.html">ABOUT US</a></li>
-            <li><a href ="protips.html">PRO TIPS</a></li>
-            <li><a href ="bookaguide.html">BOOK A GUIDE</a></li>
-            <li><a href ="contact.html">CONTACT</a></li>
-        </ul>
-        </nav>
-    </header>
-    <main>
-    <!--hero section-->
-<section class="hero">
-  <div class="hero-text">
-    <h1>ULTIMATE TRAVEL PRO TIPS </h1>
-   
-    <p>These pro tips will help you navigate the island smoothly, connect with locals, and make the most of every experience. From knowing the best ways to get around, to savoring authentic cuisine, respecting local customs, and spotting lesser-known attractions, these insider insights are designed to help you travel smarter, safer, and more authentically.</p>
-  </div>
+<style>
+    /* General reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  <img src="../Images/slskyline.png" alt="Sri Lankan skyline" class="hero-img">
-</section>
+    body {
+      font-family: Poppins, 
+      background-color: #4E0A04 ;
+      color: white;
+      height: 40px;
+    }
 
-    </main>
-    
-    <section class="featured"> 
-    <div class="featured-text">
-    <div class="section-block">
-        <h1>🌦️ GENERAL TRAVEL ADVICE</h1>
-        <img src="../Images/monsoons2.jpg" alt="Sri Lanka weather map" class="section-img">
-        <div class="content-text">
-            <h2>🔸Understand the weather before planning your trip</h2>
-            <p>Sri Lanka’s tropical climate means it’s sunny all year, but the country experiences two different monsoon seasons.
-            The Southwest Monsoon (May to September) brings rain to the southern and western coasts, while the Northeast Monsoon (November to February) affects the northern and eastern sides.
-            Visit Colombo, Galle, Mirissa, and Bentota from December to April, and explore Trincomalee, Jaffna, and Arugam Bay from May to October.</p>
+    /* Header Navigation */
+    header {
+      background-color: #95760E;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 30px;
+    }
 
-            <h2>🔸Plan fewer destinations but explore deeply</h2>
-            <p>Sri Lanka may look small on a map, but the winding roads, mountains, and traffic can make travel time longer than expected. Instead of rushing through ten towns in a week, spend time in each place to enjoy local life and hidden gems.</p>
+    header img {
+      height: 80px;
+    }
 
-            <h2>🔸Stay hydrated and eat safely</h2>
-            <p>The heat can be strong, especially in coastal and dry areas. Always drink bottled, filtered, or boiled water. Avoid drinking directly from taps, especially in remote towns. When eating street food, choose stalls that are busy and clean.</p>
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
 
-            <h2>🔸Carry small cash notes</h2>
-            <p>Many shops, tuk-tuks, and street vendors do not accept card payments. Always keep small notes in Sri Lankan Rupees (LKR) for easy transactions. Larger restaurants, supermarkets, and hotels usually accept credit or debit cards.</p>
+    nav ul li {
+      display: inline;
+    }
 
-            <h2>🔸Mobile and internet</h2>
-            <p>Get a Dialog, Mobitel, or Airtel SIM card at the airport. Data packages are affordable, and the signal is reliable even in rural areas.</p>
-        </div>
-    </div>
-    
-    <div class="section-block">
-        <h1>🙏 CULTURE & ETIQUETTE</h1>
-        <img src="../Images/respect.jpg" alt="Buddhist temple in Sri Lanka" class="section-img">
-        <div class="content-text">
-            <h2>🔹Dress modestly at temples and religious sites</h2>
-            <p>Shoulders and knees must be covered. Remove shoes and hats before entering any Buddhist or Hindu temple.</p>
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
 
-            <h2>🔹Respect Buddhist symbols</h2>
-            <p>Never take photos with your back turned to a Buddha statue. Avoid touching or pointing directly at religious images.</p>
+    nav ul li a:hover {
+      color: #781818;
+    }
 
-            <h2>🔹Greetings and manners</h2>
-            <p>The traditional greeting is “Ayubowan”, made with palms together and a slight bow. A friendly smile goes a long way — Sri Lankans are warm and welcoming.</p>
+  /* Hero Section */
+.hero {
+    background-color: #4E0A04;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    gap: 100px;
+}
 
-            <h2>🔹Right-hand etiquette</h2>
-            <p>Always use your right hand for giving or receiving money, gifts, or food. The left hand is considered unclean.</p>
+.hero-text {
+    flex: 1;
+    color: white;
+    text-align: left;
+    max-width: 45%;
+    line-height: 1.0;
+}
 
-            <h2>🔹Public behavior</h2>
-            <p>Public displays of affection such as kissing or hugging are discouraged in rural areas or religious sites.</p>
-        </div>
-    </div>
-    
-    <div class="section-block">
-        <h1>🚗 TRANSPORTATION TIPS</h1>
-        <img src="../Images/tuktuks.jpg" alt="Sri Lankan tuktuks" class="section-img">
-        <div class="content-text">
-            <h2>🔸Tuk-tuks (three-wheelers)</h2>
-            <p>Tuk-tuks are the most convenient and fun way to travel short distances. Always check if the tuk-tuk has a meter. If not, negotiate the fare before starting the ride. The PickMe app is widely used in major cities like Colombo, Kandy, and Galle and provides fair rates and GPS tracking.</p>
+.hero-text h1 {
+    font-size: 3.0rem;
+    margin-bottom: 20px;
+    color: rgb(213, 223, 131);
+}
 
-            <h2>🔸Trains</h2>
-            <p>The train journeys in Sri Lanka are famous worldwide for their scenic views, especially the route between Kandy and Ella that passes through tea plantations and misty hills.
-            Book tickets in advance for first or second class seats. If you love photography, the observation carriage offers wide windows for breathtaking shots.</p>
+.hero-img {
+    width: 45vw;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    flex-wrap: wrap;
+    background: none;
+}
 
-            <h2>🔸Buses</h2>
-            <p>Public buses are cheap and frequent but can get crowded. For long distances, take semi-luxury or air-conditioned buses, which are more comfortable. City buses are fast and may stop anywhere, so hold on tight.</p>
+    /* Featured Section */
+    .featured {
+      background-color:#740F06;
+      display: flex;
+      justify-content: space-between;
+      align-items:flex-start;
+      padding: 100px 80px; 
+      gap: 50px;
+      flex-wrap: wrap;
+    }
 
-            <h2>🔸Private cars and drivers</h2>
-            <p>Hiring a driver is common and affordable. Self-driving is possible but not recommended unless you are confident in unpredictable traffic conditions.</p>
-        </div>
-    </div>
-    
-    <div class="section-block">
-        <h1>🏞️ MUST-SEE DESTINATIONS</h1>
-        <img src="../Images/goyabokka.jpg" alt="Goyabokka beach" class="section-img">
-        
-        <div class="content-text">
-            <h2>🔹Cultural Triangle</h2>
-            <p>Visit Sigiriya, the ancient rock fortress; Dambulla Cave Temple; and the sacred cities of Anuradhapura and Polonnaruwa, which display Sri Lanka’s rich history and architecture.</p>
+.featured-img {
+    width: 45vw;
+    height: 25vw;
+    border-radius: 20px;
+    align-items:right;
+    flex-wrap: wrap;
+}
 
-            <h2>🔹Hill Country</h2>
-            <p>The cool, green heart of Sri Lanka. Visit Kandy for culture, Nuwara Eliya for colonial charm, and Ella for scenic hikes and waterfalls.</p>
+.featured-text {
+  margin-top: 2px;
+  font-size: 0.9rem;
+  text-align: left;
+  max-width: 100%;
+  color: #fff;
+}
 
-            <h2>🔹Beaches</h2>
-            <p>For relaxation, the south coast (Unawatuna, Mirissa, Tangalle) is perfect between December and April.
-            For surfing or a peaceful swim, head east to Arugam Bay or Nilaveli between May and October.</p>
+/* New rule for each main section block */
+.section-block {
+    margin-bottom: 80px;
+    overflow: auto;
+}
 
-            <h2>🔹Wildlife and nature</h2>
-            <p>Go on a safari in Yala National Park to see leopards, or visit Minneriya for the elephant gathering during the dry season.
-            Wilpattu is quieter and offers a more natural experience.</p>
+.section-block h1 {
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+    clear: both;
+}
 
-            <h2>🔹Hidden gems</h2>
-            <p>Explore Knuckles Mountain Range for hiking and waterfalls, Kalpitiya for dolphin watching and kitesurfing, and Mannar for unique desert-like scenery.</p>
+.section-img {
+    float: right;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
 
-            <h2>🔹Festivals and culture</h2>
-            <ul>
-                <li>Kandy Esala Perahera (July/August): A grand parade of dancers, drummers, and elephants.</li>
-                <li>Sinhala & Tamil New Year (April): Traditional games, sweets, and family celebrations.</li>
-                <li>Deepavali (October/November): The Hindu festival of lights celebrated with lamps and sweets.</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="section-block">
-        <h1>🍛 FOOD & DRINK</h1>
-        <img src="../Images/srilankanfood.jpg" alt="Sri Lankan rice and curry" class="section-img">
-        <div class="content-text">
-            <h2>🔶Experience authentic local cuisine</h2>
-            <p>Sri Lankan food is diverse and full of flavor. Try local staples such as rice and curry, hoppers, string hoppers, kottu roti, and pol sambol. Meals are typically eaten with the right hand — if you want to try it, locals will appreciate the effort.</p>
+.content-text {
+    overflow: ;
+}
 
-            <h2>🔶Spice levels</h2>
-            <p>Most dishes are spicy by default. If you prefer milder food, simply say “mild, please” when ordering.</p>
+.section-block:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
-            <h2>🔶Seafood specialties</h2>
-            <p>Coastal areas like Negombo, Galle, and Trincomalee offer freshly caught fish, prawns, and crab. Jaffna crab curry is considered one of the best in the world.</p>
+.content-text h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
 
-            <h2>🔶Street food adventures</h2>
-            <p>Try snacks like isso vade (prawn cakes), roti with curry, cutlets, and short eats. Choose busy stalls with fresh turnover for hygiene.</p>
+.content-text p {
+    margin-bottom: 15px;
+}
 
-            <h2>🔶Tea culture</h2>
-            <p>Visit a tea estate in Nuwara Eliya or Ella to see how world-famous Ceylon tea is made. Enjoy a cup of freshly brewed black or green tea with a view of misty hills.</p>
-        </div>
-    </div>
-    
-    <div class="section-block">
-        <h1>🩺 HEALTH & SAFETY</h1>
-        <img src="../Images/mosquitosrepellent.jpg" alt="Mosquito repellent" class="section-img">
-        <div class="content-text">
-            <h2>🔷Use mosquito repellent</h2>
-            <p>Dengue fever can occur in some areas, so use repellent, wear light clothing, and sleep under nets when needed.</p>
+    /* Button Section */
+    .cta {
+      background-color:  #4E0A04;
+      text-align: center;
+      padding: 100px;
+    }
 
-            <h2>🔷Travel insurance</h2>
-            <p>Always have insurance covering medical emergencies, lost luggage, and flight cancellations.</p>
+    .cta button {
+      background-color: #2d6b2d;
+      border: none;
+      padding: 15px 50px;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
 
-            <h2>🔷Emergency numbers</h2>
-            <p>Tourist Police: 1912</p>
-            <p>Medical emergencies: 1990</p>
+    .cta button:hover {
+      background-color: #3c8c3c;
+    }
 
-            <h2>🔷Stray animals</h2>
-            <p>Avoid petting stray dogs, cats, or monkeys to prevent bites or infections.</p>
-            <h2>Ethical wildlife tourism</h2>
-            <p>Avoid elephant rides or unethical animal attractions. Choose sanctuaries that protect and rehabilitate wildlife.</p>
-        </div>
-    </div>
-
-    <div class="section-block">
-        <h1>💰 MONEY & BUDGETING</h1>
-        <img src="../Images/srilankancurrency.jpg" alt="Sri Lankan Rupee cash notes" class="section-img">
-        <div class="content-text">
-            <h2>🔷Currency and rates</h2>
-            <p>The Sri Lankan Rupee (LKR) is the local currency. Exchange money at authorized counters or banks for the best rates.</p>
-
-            <h2>🔷Tipping</h2>
-            <p>Though not mandatory, a 5–10% tip is appreciated in restaurants and for drivers or guides who provide good service.</p>
-
-            <h2>🔷Bargaining</h2>
-            <p>Bargaining is acceptable at local markets. Always smile and stay polite.</p>
-
-            <h2>🔷Souvenirs</h2>
-            <p>Good souvenirs include Ceylon tea, handmade crafts, spices, batik fabrics, and gems. Purchase from certified shops to ensure authenticity.</p>
-        </div>
-    </div>
-
-</div>
-
-</section>
-</main>
-  
-  <!-- Footer -->
-  <footer>
-    © 2025 TravelAnka. All Rights Reserved.
-  </footer>
-
-</body>
-
-</html>
+    /* Footer */
+    footer {
+      background-color: #bfa12d;
+      text-align: center;
+      padding: 15px;
+      color: black;
+      font-weight: bold;
+    }
 
 
+/* ====================== */
+/* RESPONSIVE DESIGN BELOW */
+/* ====================== */
+
+/* For tablets and smaller laptops */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 40px;
+    gap: 50px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 70%;
+  }
+
+  .featured {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 40px;
+  }
+
+  .featured-img {
+    width: 70%;
+    height: auto;
+  }
+
+  .section-img {
+    float: none;
+    display: block;
+    margin: 0 auto 30px auto;
+    width: 80%;
+  }
+
+  .section-block h1 {
+    text-align: center;
+  }
+
+  .cta {
+    padding: 60px 20px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  header img {
+    height: 60px;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero-img {
+    width: 90%;
+  }
+
+  .featured {
+    padding: 40px 20px;
+  }
+
+  .featured-img {
+    width: 100%;
+  }
+
+  .section-block {
+    padding: 0 20px;
+  }
+
+  .cta button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
+</style>
