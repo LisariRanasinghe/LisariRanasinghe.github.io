@@ -1,99 +1,99 @@
 <style>
-    /* General reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
 
-    body {
-      font-family: Poppins, 
-      background-color: #4E0A04 ;
-      color: white;
-      height: 40px;
-    }
 
-    /* Header Navigation */
-    header {
-      background-color: #95760E;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 25px 30px;
-    }
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    header img {
-      height: 80px;
-    }
+body {
+  font-family: Poppins;
+  background-color: #4E0A04;
+  color: white;
+  height: 40px;
+}
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 30px;
-    }
+/* Header Navigation */
+header {
+  background-color: #95760E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+}
 
-    nav ul li {
-      display: inline;
-    }
+header img {
+  height: 80px;
+}
 
-    nav ul li a {
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
 
-    nav ul li a:hover {
-      color: #781818;
-    }
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #781818;
+}
 
 /* Hero Section */
 .hero {
-    background-color: #4E0A04;
-    display: flex;
-    justify-content: space-between; /* pushes text left, image right */
-    align-items: center; /* vertically align */
-    padding: 100px;
-    gap: 100px; /* space between text and image */
+  background-color: #4E0A04;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  gap: 100px;
 }
 
 /* Text container */
 .hero-text {
-    flex: 1; /* takes available space */
-    color: white;
-    text-align: left;
-    max-width: 45%; /* keeps text from stretching too wide */
-    line-height: 1.0;
+  flex: 1;
+  color: white;
+  text-align: left;
+  max-width: 45%;
+  line-height: 1.0;
 }
 
 .hero-text h1 {
-    font-size: 3.0rem;
-    margin-bottom: 20px;
-         color: rgb(213, 223, 131);
-
+  font-size: 3.0rem;
+  margin-bottom: 20px;
+  color: rgb(213, 223, 131);
 }
 
 /* Image container */
 .hero-img {
-    width: 45vw;
-    height: auto;
-    border-radius: 20px;
-    object-fit: cover;
-    flex-wrap: wrap;
-    background: none; /* ensures no background */
+  width: 45vw;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  flex-wrap: wrap;
+  background: none;
 }
 
-
-  /* Contact Section */
+/* Contact Section */
 .contact-section {
   background-color: #740F06;
   display: flex;
-  justify-content: space-between; /* form left, contact right */
+  justify-content: space-between;
   align-items: flex-start;
   padding: 60px 100px;
-  gap: 60px; /* space between form and contact box */
+  gap: 60px;
   color: white;
-  flex-wrap: wrap; /* keeps layout responsive */
+  flex-wrap: wrap;
 }
 
 /* Online Inquiry (Form) */
@@ -124,8 +124,8 @@
 }
 
 .inquiry-box select option {
-    background-color: #740F06; /* dark red background */
-    color: #f6e794; /* gold text */
+  background-color: #740F06;
+  color: #f6e794;
 }
 
 .inquiry-box button {
@@ -143,7 +143,7 @@
   background-color: #337833;
 }
 
-/* Contact Details (Right side) */
+/* Contact Details */
 .contact-details {
   flex: 1;
   min-width: 300px;
@@ -174,12 +174,137 @@
 .contact-details .social-btn:hover {
   background-color: #255525;
 }
-    /* Footer */
-    footer {
-      background-color: #bfa12d;
-      text-align: center;
-      padding: 15px;
-      color: black;
-      font-weight: bold;
-    }
-  </style>
+
+/* Footer */
+footer {
+  background-color: #bfa12d;
+  text-align: center;
+  padding: 15px;
+  color: black;
+  font-weight: bold;
+}
+
+/* ---------------- RESPONSIVENESS ADDED BELOW ---------------- */
+
+/* Tablets (1024px and below) */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 40px;
+    gap: 50px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 70vw;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    padding: 40px 50px;
+    align-items: center;
+  }
+
+  .inquiry-box, .contact-details {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .contact-details .details-box {
+    width: 100%;
+  }
+}
+
+/* Mobile devices (768px and below) */
+@media (max-width: 768px) {
+  header img {
+    height: 60px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-img {
+    width: 90vw;
+  }
+
+  .contact-section {
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .inquiry-box input,
+  .inquiry-box select,
+  .inquiry-box textarea {
+    font-size: 0.9rem;
+  }
+
+  .inquiry-box button {
+    align-self: center;
+  }
+
+  .contact-details {
+    text-align: center;
+  }
+
+  .contact-details .details-box {
+    height: auto;
+    padding: 15px;
+  }
+}
+
+/* Very small screens (480px and below) */
+@media (max-width: 480px) {
+  header {
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 30px 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .contact-section {
+    padding: 20px 15px;
+  }
+
+  .inquiry-box, .contact-details {
+    width: 100%;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
+</style>
