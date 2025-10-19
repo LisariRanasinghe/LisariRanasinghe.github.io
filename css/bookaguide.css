@@ -51,51 +51,46 @@
 .hero {
     background-color: #4E0A04;
     display: flex;
-    justify-content: space-between; /* pushes text left, image right */
-    align-items: center; /* vertically align */
+    justify-content: space-between;
+    align-items: center;
     padding: 100px;
-    gap: 100px; /* space between text and image */
+    gap: 100px;
 }
 
-/* Text container */
 .hero-text {
-    flex: 1; /* takes available space */
+    flex: 1;
     color: white;
     text-align: left;
-    max-width: 45%; /* keeps text from stretching too wide */
+    max-width: 45%;
     line-height: 1.4;
 }
 
 .hero-text h1 {
     font-size: 3.0rem;
     margin-bottom: 20px;
-         color: rgb(213, 223, 131);
-
+    color: rgb(213, 223, 131);
 }
 
-
-/* Image container */
 .hero-img {
     width: 35vw;
     height: auto;
     border-radius: 20px;
     object-fit: cover;
     flex-wrap: wrap;
-    background: none; /* ensures no background */
+    background: none;
 }
 
-/*guide grid*/
-
- .featured {
-      background-color:#740F06   ;
+/* Guide grid */
+.featured {
+      background-color:#740F06;
       display: flex;
       justify-content: space-around;
       align-items: center;
       padding: 100px 80px; 
       gap: 80px;
       flex-wrap: wrap;
-    }
-    
+}
+
 .guides-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -109,7 +104,7 @@
 }
 
 .guide img {
-  width: 300px;      /* Larger image */
+  width: 300px;
   height: 300px;
   border-radius: 15px;
   object-fit: cover;
@@ -132,29 +127,29 @@
   font-size: 1.1rem;
 }
 
- /* Button Section */
-    .cta {
-      background-color:  #4E0A04;
-      text-align: center;
-      padding: 100px;
-    }
+/* Button Section */
+.cta {
+  background-color:  #4E0A04;
+  text-align: center;
+  padding: 100px;
+}
 
-    .cta button {
-      background-color: #2d6b2d;
-      border: none;
-      padding: 15px 50px;
-      color: black;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 6px;
-      transition: background 0.3s;
-    }
+.cta button {
+  background-color: #2d6b2d;
+  border: none;
+  padding: 15px 50px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
 
-    .cta button:hover {
-      background-color: #3c8c3c;
-    }
+.cta button:hover {
+  background-color: #3c8c3c;
+}
 
-/* Responsive design */
+/* Existing Responsive design for guide grid */
 @media (max-width: 900px) {
   .guides-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -175,14 +170,81 @@
     width: 220px;
     height: 220px;
   }
-
 }
-    /* Footer */
-    footer {
-      background-color: #bfa12d;
-      text-align: center;
-      padding: 15px;
-      color: black;
-      font-weight: bold;
-    }
-  </style>
+
+/* --- ADDITIONAL RESPONSIVE DESIGN (HERO + HEADER) --- */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  header img {
+    height: 70px;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 60px 40px;
+    gap: 50px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 70%;
+  }
+
+  .cta {
+    padding: 60px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero-img {
+    width: 90%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cta button {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #bfa12d;
+  text-align: center;
+  padding: 15px;
+  color: black;
+  font-weight: bold;
+}
+</style>
