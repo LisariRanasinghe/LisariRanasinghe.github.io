@@ -1,225 +1,259 @@
 <style>
-    /* General reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Poppins, 
-      background-color: #4E0A04 ;
-      color: white;
-      height: 40px;
-    }
-
-    /* Header Navigation */
-    header {
-      background-color: #95760E;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 25px 30px;
-    }
-
-    header img {
-      height: 80px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 30px;
-    }
-
-    nav ul li {
-      display: inline;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: black;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav ul li a:hover {
-      color: #781818;
-    }
-
-  /* Hero Section */
-.hero {
-    background-color: #4E0A04;
-    display: flex;
-    justify-content: space-between; /* pushes text left, image right */
-    align-items: center; /* vertically align */
-    padding: 100px;
-    gap: 100px; /* space between text and image */
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Text container */
+body {
+  font-family: Poppins, sans-serif;
+  background-color: #4E0A04;
+  color: white;
+}
+
+/* Header Navigation */
+header {
+  background-color: #95760E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+  flex-wrap: wrap;
+}
+
+header img {
+  height: 80px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #781818;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #4E0A04;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
 .hero-text {
-    flex: 1; /* takes available space */
-    color: white;
-    text-align: left;
-    max-width: 45%; /* keeps text from stretching too wide */
-    line-height: 1.0;
+  flex: 1;
+  color: white;
+  text-align: left;
+  max-width: 45%;
+  line-height: 1.0;
 }
 
 .hero-text h1 {
-    font-size: 3.0rem;
-    margin-bottom: 20px;
-         color: rgb(213, 223, 131);
-
+  font-size: 3.0rem;
+  margin-bottom: 20px;
+  color: rgb(213, 223, 131);
 }
 
-/* Image container */
 .hero-img {
-    width: 45vw;
-    height: auto;
-    border-radius: 20px;
-    object-fit: cover;
-    flex-wrap: wrap;
-    background: none; /* ensures no background */
+  width: 45vw;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  flex-wrap: wrap;
+  background: none;
 }
 
-/* FIRST SECTION Featured Section */
-    .featured {
-      background-color:#740F06   ;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 2px 0px;
-      gap: 20px;
-     
-    }
+/* Featured Section */
+.featured {
+  background-color: #740F06;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 100px 80px;
+  gap: 50px;
+  flex-wrap: wrap;
+}
 
-    .featured-item {
-      flex: 1;
-      text-align: center;
-      text-align: center;
-    }
+.featured-item {
+  flex: 1;
+  text-align: center;
+}
 
-        .featured-item img {
-          width: 100%;
-          height: 350px;      /* forces equal height */
-          object-fit: cover;  /* crops image nicely */
-          border-radius: 5px;
-          display: block;
-    }
+.featured-item img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+}
 
 .featured-item h3 {
   margin-top: 2px;
   font-size: 1.1rem;
   font-weight: bold;
   color: #fff;
-  /* white text for contrast */
 }
 
-    /* Featured Section */
-    .featured {
-      background-color:#740F06   ;
-      display: flex;
-      justify-content: space-between;
-      align-items:flex-start;
-      padding: 100px 80px; 
-      gap: 50px;
-      flex-wrap: wrap;
-    }
 .featured-img {
-    width: 45vw; /* Image takes 45% of the viewport width */
-   height: 25vw;
-     /* Maintains the image's aspect ratio */
-    border-radius: 20px; /* Rounded corners */
-    align-items:right;
-    flex-wrap: wrap;
-    
+  width: 45vw;
+  height: 25vw;
+  border-radius: 20px;
+  flex-wrap: wrap;
 }
+
 .featured-text {
   margin-top: 2px;
   font-size: 0.9rem;
   text-align: left;
-  max-width: 100%; /* CHANGE: Allow to take full width of .featured */
+  max-width: 100%;
   color: #fff;
-  /* white text for contrast */
 }
 
-/* New rule for each main section block */
+/* Section Blocks */
 .section-block {
-    margin-bottom: 80px; /* Space between the main sections */
-    overflow: auto; /* Contains the floated elements */
+  margin-bottom: 80px;
+  overflow: auto;
 }
 
-/* Style for the main section headings */
 .section-block h1 {
-    font-size: 2.0rem;
-    margin-bottom: 20px;
-    clear: both; /* Ensures the heading is not next to a previous section's floated image */
+  font-size: 2.0rem;
+  margin-bottom: 20px;
+  clear: both;
 }
 
-/* Style for the image inside each section */
 .section-img {
-    float: right; /* Places the image on the right */
-    margin-left: 200px; /* Spacing between image and text */
-    margin-bottom: 20px;
-    width: 35%; /* Adjust size as needed, e.g., 40% of the section block width */
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
+  float: right;
+  margin-left: 200px;
+  margin-bottom: 20px;
+  width: 35%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
-/* Style for the text content next to the image */
 .content-text {
-    overflow: hidden; /* This will make the content sit next to the floated image */
+  overflow: hidden;
 }
 
-/* Clear the float after the entire section content (optional, but good practice) */
 .section-block:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
-/* Style for the subheadings within the text content */
 .content-text h2 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: rgb(213, 223, 131);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: rgb(213, 223, 131);
 }
 
-/* Style for paragraphs within the text content */
 .content-text p {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-    /* Button Section */
-    .cta {
-      background-color:  #4E0A04;
-      text-align: center;
-      padding: 100px;
-    }
+/* Button Section */
+.cta {
+  background-color: #4E0A04;
+  text-align: center;
+  padding: 100px;
+}
 
-    .cta button {
-      background-color: #2d6b2d;
-      border: none;
-      padding: 15px 50px;
-      color: black;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 6px;
-      transition: background 0.3s;
-    }
+.cta button {
+  background-color: #2d6b2d;
+  border: none;
+  padding: 15px 50px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
 
-    .cta button:hover {
-      background-color: #3c8c3c;
-    }
+.cta button:hover {
+  background-color: #3c8c3c;
+}
 
-    /* Footer */
-    footer {
-      background-color: #bfa12d;
-      text-align: center;
-      padding: 15px;
-      color: black;
-      font-weight: bold;
-    }
-  </style>
+/* Footer */
+footer {
+  background-color: #bfa12d;
+  text-align: center;
+  padding: 15px;
+  color: black;
+  font-weight: bold;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 60px 5%;
+    gap: 50px;
+  }
+  .hero-text, .hero-img {
+    max-width: 100%;
+    width: 100%;
+  }
+  .featured {
+    padding: 60px 5%;
+    gap: 30px;
+  }
+  .featured-img {
+    width: 100%;
+    height: auto;
+  }
+  .section-img {
+    float: none;
+    margin: 20px 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .hero {
+    flex-direction: column;
+    padding: 50px 5%;
+  }
+  .featured {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: clamp(1.5rem, 8vw, 2.5rem);
+  }
+  .content-text h2 {
+    font-size: 1rem;
+  }
+  .content-text p, .featured-text {
+    font-size: 0.9rem;
+  }
+  .featured-item img {
+    height: auto;
+  }
+}
+</style>
