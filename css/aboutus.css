@@ -71,7 +71,7 @@ nav ul li a:hover {
 }
 
 .hero-text p {
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-size: clamp(1rem, 1vw, 1rem);
 }
 
 /* Image container */
@@ -214,3 +214,4 @@ footer {
   }
 }
 </style>
+
