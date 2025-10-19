@@ -4,6 +4,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      flex-wrap: wrap;
     }
 
     body {
@@ -11,6 +12,7 @@
       background-color: #4E0A04 ;
       color: white;
       height: 40px;
+      flex-wrap: wrap;
     }
 
     /* Header Navigation */
@@ -20,20 +22,24 @@
       justify-content: space-between;
       align-items: center;
       padding: 25px 30px;
+      flex-wrap: wrap;
     }
 
     header img {
       height: 80px;
+    flex-wrap: wrap;
     }
 
     nav ul {
       list-style: none;
       display: flex;
       gap: 30px;
+        flex-wrap: wrap;
     }
 
     nav ul li {
       display: inline;
+        flex-wrap: wrap;
     }
 
     nav ul li a {
@@ -41,16 +47,19 @@
       color: black;
       font-weight: bold;
       transition: color 0.3s;
+        flex-wrap: wrap;
     }
 
     nav ul li a:hover {
       color: #781818;
+        flex-wrap: wrap;
     }
 
     /* Hero Section */
   .hero {
       background-color: #4E0A04;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       /* center the group a bit more */
       align-items: center;
@@ -73,10 +82,12 @@
    .hero-img.left {
        margin-left: 2;
        /* stick to the left edge */
+       flex-wrap: wrap;
    }
 
    .hero-img.right {
        margin-right: 2;
+       flex-wrap: wrap;
        /* stick to the right edge */
    }
 
@@ -84,18 +95,21 @@
       flex: 1;
       text-align: center;
       padding:  20px;
+        flex-wrap: wrap;
     }
 
     .hero-text h1 {
       font-size: 5rem;
       margin-bottom: 10px;
            color: rgb(213, 223, 131);
+        flex-wrap: wrap;
 
     }
 
     .hero-text p {
       font-size: 1.5rem;
       color: #ccc;
+        flex-wrap: wrap;
     }
 
     /* Featured Section */
@@ -107,12 +121,14 @@
       padding: 100px 80px; 
       gap: 80px;
       flex-wrap: wrap;
+        
     }
 
     .featured-item {
       flex: 1;
       text-align: center;
       text-align: center;
+        flex-wrap: wrap;
     }
 
         .featured-item img {
@@ -121,6 +137,7 @@
           object-fit: cover;  /* crops image nicely */
           border-radius: 10px;
           display: block;
+            flex-wrap: wrap;
     }
 
 .featured-item h3 {
@@ -128,6 +145,7 @@
   font-size: 1.1rem;
   font-weight: bold;
   color: #fff;
+    flex-wrap: wrap;
   /* white text for contrast */
 }
 
@@ -136,6 +154,7 @@
       background-color:  #4E0A04;
       text-align: center;
       padding: 100px;
+        flex-wrap: wrap;
     }
 
     .cta button {
@@ -147,10 +166,12 @@
       cursor: pointer;
       border-radius: 6px;
       transition: background 0.3s;
+        flex-wrap: wrap;
     }
 
     .cta button:hover {
       background-color: #3c8c3c;
+        flex-wrap: wrap;
     }
 
     /* Footer */
@@ -160,5 +181,7 @@
       padding: 15px;
       color: black;
       font-weight: bold;
+        flex-wrap: wrap;
     }
   </style>
+
